@@ -2,7 +2,9 @@
 'use strict';
 
 self.addEventListener('fetch', function (event) {
-  console.log(event.request);
+  event.respondWith(new Response('Hello <b class="a-winner-is-me">world</b>', {
+    headers: { 'Content-Type': 'text/html' }
+  }));
 });
 
 },{}],2:[function(require,module,exports){
