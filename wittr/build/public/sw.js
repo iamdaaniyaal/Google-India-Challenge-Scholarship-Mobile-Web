@@ -2,9 +2,13 @@
 'use strict';
 
 self.addEventListener('fetch', function (event) {
-  event.respondWith(new Response('Hello <b class="a-winner-is-me">world</b>', {
-    headers: { 'Content-Type': 'text/html' }
-  }));
+  // event.respondWith(
+  // 	new Response('Hello <b class="a-winner-is-me">world</b>', {
+  // 		headers:{'Content-Type': 'text/html'}
+  // 	})
+  // 	)
+
+  event.respondWith(fetch('/imgs/dr-evil.gif'));
 });
 
 },{}],2:[function(require,module,exports){
